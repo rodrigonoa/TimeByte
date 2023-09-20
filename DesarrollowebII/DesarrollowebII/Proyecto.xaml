@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             BackgroundColor="#242424"
+             Title="Proyecto"
+             x:Class="DesarrollowebII.Proyecto">
+    <ContentPage.Content>
+        <StackLayout Padding="20" Spacing="10">
+            <Label Text="Proyecto: Bregma" FontSize="24" FontAttributes="Bold" HorizontalOptions="CenterAndExpand" TextColor="White"/>
+            <Image Source="getbyte.jpg" HeightRequest="180" WidthRequest="50" Aspect="AspectFit" BackgroundColor="White"/>
+            <Label Text="Descripción del Proyecto" FontSize="16" FontAttributes="Bold" TextColor="White"/>
+            <Label Text="Bregma es un proyecto innovador que busca revolucionar la industria de la tecnología. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam." FontSize="16" TextColor="White"/>
+
+            <Label Text="Fecha de Inicio" FontSize="16" FontAttributes="Bold" TextColor="White"/>
+            <Label Text="01 de Enero de 2023" FontSize="16" TextColor="White"/>
+
+            <Label Text="Duración del Proyecto" FontSize="16" FontAttributes="Bold" TextColor="White"/>
+            <Label Text="6 meses" FontSize="16" TextColor="White"/>
+
+            <Label Text="Equipo de Proyecto" FontSize="16" FontAttributes="Bold" TextColor="White"/>
+            <Label Text="Nombre del Jefe de Proyecto: John Doe" FontSize="16" TextColor="White"/>
+            <Label Text="Desarrolladores: Alice, Bob, Carol" FontSize="16" TextColor="White"/>
+            <Label Text="Diseñadores: Emily, Frank" FontSize="16" TextColor="White"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             BackgroundColor="#242424"
+             Title="Ayuda"
+             IconImageSource="informacion"
+             x:Class="DesarrollowebII.Componentes.Ayuda">
+    <StackLayout>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="10"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="10"/>
+                <RowDefinition Height="25"/>
+                <RowDefinition Height="15"/>
+                <RowDefinition Height="25"/>
+                <RowDefinition Height="5"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="5"/>
+                <RowDefinition Height="25"/>
+                <RowDefinition Height="35"/>
+                <RowDefinition Height="25"/>
+                <RowDefinition Height="5"/>
+                <RowDefinition Height="25"/>
+                <RowDefinition Height="35"/>
+                <RowDefinition Height="25"/>
+                <RowDefinition Height="25"/>
+                <RowDefinition Height="5"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="15"/>
+                <ColumnDefinition Width="15"/>
+                <ColumnDefinition Width="240"/>
+                <ColumnDefinition Width="80"/>
+                <ColumnDefinition Width="15"/>
+            </Grid.ColumnDefinitions>
+            <ImageButton Source="logoTimeByte" x:Name="btnHome" Clicked="btnHome_Clicked" Grid.Column="1" Grid.ColumnSpan="2" HorizontalOptions="Start" BackgroundColor="Transparent" Grid.Row="1"/>
+            <Button Text="Tutoriales" x:Name="btnTutoriales" Clicked="btnTutoriales_Clicked" FontAttributes="Bold" FontSize="18" Grid.Column="2" Grid.Row="7" Grid.ColumnSpan="2" Grid.RowSpan="3" BackgroundColor="#FF8100"/>
+            <Button Text="Contacto" x:Name="btnContacto" Clicked="btnContacto_Clicked" FontAttributes="Bold" FontSize="18" Grid.Column="2" Grid.Row="11" Grid.ColumnSpan="2" Grid.RowSpan="3" BackgroundColor="#FF8100"/>
+            <Button Text="Proyecto" x:Name="btnProyecto" Clicked="btnProyecto_Clicked" FontAttributes="Bold" FontSize="18" Grid.Column="2" Grid.Row="15" Grid.ColumnSpan="2" Grid.RowSpan="3" BackgroundColor="#FF8100"/>
+        </Grid>
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="#242424"
+             Title="Avance"
+             IconImageSource="boton_de_play"
+             x:Class="DesarrollowebII.Componentes.Avance">
+    <StackLayout>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="10"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="10"/>
+                <RowDefinition Height="25"/>
+                <RowDefinition Height="15"/>
+                <RowDefinition Height="25"/>
+                <RowDefinition Height="5"/>
+                <RowDefinition Height="25"/>
+                <RowDefinition Height="5"/>
+                <RowDefinition Height="25"/>
+                <RowDefinition Height="5"/>
+                <RowDefinition Height="25"/>
+                <RowDefinition Height="5"/>
+                <RowDefinition Height="25"/>
+                <RowDefinition Height="5"/>
+                <RowDefinition Height="25"/>
+                <RowDefinition Height="5"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="15"/>
+                <ColumnDefinition Width="15"/>
+                <ColumnDefinition Width="240"/>
+                <ColumnDefinition Width="140"/>
+                <ColumnDefinition Width="15"/>
+            </Grid.ColumnDefinitions>
+            <ImageButton Source="logoTimeByte" x:Name="btnHome" Clicked="btnHome_Clicked" Grid.Column="1" Grid.ColumnSpan="2" HorizontalOptions="Start" BackgroundColor="Transparent" Grid.Row="1"/>
+        </Grid>
+    </StackLayout>
+</ContentPage>

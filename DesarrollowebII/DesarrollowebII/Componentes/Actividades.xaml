@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="#242424"
+             Title="Actividades"
+             IconImageSource="portapapeles"
+             x:Class="DesarrollowebII.Componentes.Actividades">
+    <StackLayout>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="10"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="5"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="5"/>
+                <RowDefinition Height="75"/>
+                <RowDefinition Height="10"/>
+                <RowDefinition Height="75"/>
+                <RowDefinition Height="10"/>
+                <RowDefinition Height="75"/>
+                <RowDefinition Height="10"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="15"/>
+                <ColumnDefinition Width="15"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="15"/>
+                <ColumnDefinition Width="15"/>
+            </Grid.ColumnDefinitions>
+            <ImageButton Source="logoTimeByte" x:Name="btnHome" Clicked="btnHome_Clicked" Grid.Column="1" Grid.ColumnSpan="2" HorizontalOptions="Start" BackgroundColor="Transparent" Grid.Row="1"/>
+            <StackLayout BackgroundColor="#565656" Grid.Column="2" Grid.Row="5" >
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1"/>
+                        <RowDefinition Height="15"/>
+                        <RowDefinition Height="0"/>
+                        <RowDefinition Height="19"/>
+                        <RowDefinition Height="1"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="5"/>
+                        <ColumnDefinition Width="210"/>
+                        <ColumnDefinition Width="70"/>
+                        <ColumnDefinition Width="15"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Text="Actividad" TextColor="White" Grid.Column="1" Grid.Row="1"/>
+                    <Label Text="Crear Api para X" TextColor="White" Grid.Column="1" Grid.Row="3"/>
+                    <ImageButton Source="vermasButton" HeightRequest="40" WidthRequest="30" Aspect="AspectFit" Grid.Column="2" Grid.Row="2" Grid.RowSpan="2"/>
+                </Grid>
+            </StackLayout>
+            <StackLayout Grid.Column="2" Grid.Row="7" BackgroundColor="#565656">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1"/>
+                        <RowDefinition Height="15"/>
+                        <RowDefinition Height="0"/>
+                        <RowDefinition Height="19"/>
+                        <RowDefinition Height="1"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="5"/>
+                        <ColumnDefinition Width="210"/>
+                        <ColumnDefinition Width="70"/>
+                        <ColumnDefinition Width="15"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Text="Actividad" TextColor="White" Grid.Column="1" Grid.Row="1"/>
+                    <Label Text="Crear Api para X" TextColor="White" Grid.Column="1" Grid.Row="3"/>
+                    <ImageButton Source="vermasButton" HeightRequest="40" WidthRequest="30" Aspect="AspectFit" Grid.Column="2" Grid.Row="2" Grid.RowSpan="2"/>
+                </Grid>
+            </StackLayout>
+            <StackLayout Grid.Column="2" Grid.Row="9" BackgroundColor="#565656">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1"/>
+                        <RowDefinition Height="15"/>
+                        <RowDefinition Height="0"/>
+                        <RowDefinition Height="19"/>
+                        <RowDefinition Height="1"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="5"/>
+                        <ColumnDefinition Width="210"/>
+                        <ColumnDefinition Width="70"/>
+                        <ColumnDefinition Width="15"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Text="Actividad" TextColor="White" Grid.Column="1" Grid.Row="1"/>
+                    <Label Text="Crear Api para X" TextColor="White" Grid.Column="1" Grid.Row="3"/>
+                    <ImageButton Source="vermasButton" HeightRequest="40" WidthRequest="30" Aspect="AspectFit" Grid.Column="2" Grid.Row="2" Grid.RowSpan="2"/>
+                </Grid>
+            </StackLayout>
+        </Grid>
+    </StackLayout>
+</ContentPage>

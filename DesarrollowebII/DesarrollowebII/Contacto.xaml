@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             BackgroundColor="#242424"
+             Title="Contacto"
+             x:Class="DesarrollowebII.Contacto">
+    <ContentPage.Content>
+        <StackLayout Padding="20" Spacing="10">
+            <Image Source="cara.jpg" HeightRequest="180" WidthRequest="50" Aspect="AspectFit" />
+
+            <Label Text="Juanito Quispe Wiliams" FontSize="24" FontAttributes="Bold" HorizontalOptions="CenterAndExpand" TextColor="White"/>
+            <BoxView HeightRequest="10"/>
+            <Label Text="Número de Teléfono" FontSize="16" FontAttributes="Bold" TextColor="White"/>
+            <Label Text="+51 987654321" FontSize="16" TextColor="White"/>
+            <BoxView HeightRequest="30"/>
+            <Label Text="Correo Electrónico" FontSize="16" FontAttributes="Bold" TextColor="White"/>
+            <Label Text="jefe.proyecto@example.com" FontSize="16" TextColor="White"/>
+            <BoxView HeightRequest="30"/>
+            <Label Text="Ubicación" FontSize="16" FontAttributes="Bold" TextColor="White"/>
+            <Label Text="Ciudad, País" FontSize="16" TextColor="White"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

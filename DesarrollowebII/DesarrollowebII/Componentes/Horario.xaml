@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="#242424"
+             IconImageSource="calendar_days.png"
+             Title="Calendario"
+             x:Class="DesarrollowebII.Componentes.Horario">
+    <StackLayout>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="10"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="10"/>
+                <RowDefinition Height="25"/>
+                <RowDefinition Height="15"/>
+                <RowDefinition Height="25"/>
+                <RowDefinition Height="5"/>
+                <RowDefinition Height="25"/>
+                <RowDefinition Height="5"/>
+                <RowDefinition Height="25"/>
+                <RowDefinition Height="5"/>
+                <RowDefinition Height="25"/>
+                <RowDefinition Height="5"/>
+                <RowDefinition Height="25"/>
+                <RowDefinition Height="5"/>
+                <RowDefinition Height="25"/>
+                <RowDefinition Height="5"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="15"/>
+                <ColumnDefinition Width="15"/>
+                <ColumnDefinition Width="240"/>
+                <ColumnDefinition Width="100"/>
+                <ColumnDefinition Width="15"/>
+            </Grid.ColumnDefinitions>
+            <ImageButton Source="logoTimeByte" x:Name="btnHome" Clicked="btnHome_Clicked" Grid.Column="1" Grid.ColumnSpan="2" HorizontalOptions="Start" BackgroundColor="Transparent" Grid.Row="1"/>
+            <Label Text="Horario de clases:" Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="3" TextColor="White" FontSize="18" HorizontalTextAlignment="Start"/>
+            <Label Text="Lunes" Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="5" TextColor="White" FontSize="18" HorizontalTextAlignment="Start"/>
+            <Label Text="Martes" Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="7" TextColor="White" FontSize="18" HorizontalTextAlignment="Start"/>
+            <Label Text="Miercoles" Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="9" TextColor="White" FontSize="18" HorizontalTextAlignment="Start"/>
+            <Label Text="Jueves" Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="11" TextColor="White" FontSize="18" HorizontalTextAlignment="Start"/>
+            <Label Text="Viernes" Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="13" TextColor="White" FontSize="18" HorizontalTextAlignment="Start"/>
+            <Label Text="Sabado" Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="15" TextColor="White" FontSize="18" HorizontalTextAlignment="Start"/>
+            <Label x:Name="lblLunes" Text="16:00-20:00" Grid.Column="3" Grid.ColumnSpan="1" Grid.Row="5" TextColor="White" FontSize="18" HorizontalTextAlignment="Start"/>
+            <ImageButton x:Name="btnEditLunes" Clicked="btnEditLunes_Clicked" BackgroundColor="Transparent" Grid.Column="4" Grid.Row="5" Source="editar"/>
+            <Label x:Name="lblMartes" Text="16:00-20:00" Grid.Column="3" Grid.ColumnSpan="2" Grid.Row="7" TextColor="White" FontSize="18" HorizontalTextAlignment="Start"/>
+            <ImageButton x:Name="btnEditMartes" Clicked="btnEditMartes_Clicked" BackgroundColor="Transparent" Grid.Column="4" Grid.Row="7" Source="editar"/>
+            <Label x:Name="lblMiercoles" Text="16:00-20:00" Grid.Column="3" Grid.ColumnSpan="2" Grid.Row="9" TextColor="White" FontSize="18" HorizontalTextAlignment="Start"/>
+            <ImageButton x:Name="btnEditMiercoles" Clicked="btnEditMiercoles_Clicked" BackgroundColor="Transparent" Grid.Column="4" Grid.Row="9" Source="editar"/>
+            <Label x:Name="lblJueves" Text="16:00-20:00" Grid.Column="3" Grid.ColumnSpan="2" Grid.Row="11" TextColor="White" FontSize="18" HorizontalTextAlignment="Start"/>
+            <ImageButton x:Name="btnEditJueves" Clicked="btnEditJueves_Clicked" BackgroundColor="Transparent" Grid.Column="4" Grid.Row="11" Source="editar"/>
+            <Label x:Name="lblViernes" Text="-------------------" Grid.Column="3" Grid.ColumnSpan="2" Grid.Row="13" TextColor="White" FontSize="18" HorizontalTextAlignment="Start"/>
+            <ImageButton x:Name="btnEditViernes" Clicked="btnEditViernes_Clicked" BackgroundColor="Transparent" Grid.Column="4" Grid.Row="13" Source="editar"/>
+            <Label x:Name="lblSabado" Text="16:00-20:00" Grid.Column="3" Grid.ColumnSpan="2" Grid.Row="15" TextColor="White" FontSize="18" HorizontalTextAlignment="Start"/>
+            <ImageButton x:Name="btnEditSabado" Clicked="btnEditSabado_Clicked" BackgroundColor="Transparent" Grid.Column="4" Grid.Row="15" Source="editar"/>
+            <StackLayout Grid.Row="17" Grid.RowSpan="5" Grid.Column="1" Grid.ColumnSpan="3" BackgroundColor="#2C2C2C" Padding="5">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="40"/>
+                        <RowDefinition Height="20"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="1"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="1"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="1"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="1"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="1"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="1"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Text="Calendario:" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="3" TextColor="White" FontSize="16"/>
+                    <Label Grid.Row="1" Grid.Column="0" Text="L" TextColor="White" HorizontalOptions="Center"/>
+                    <BoxView Grid.Row="1" Grid.Column="1" Color="White" Grid.RowSpan="8" HorizontalOptions="Center"/>
+                    <Label Grid.Row="1" Grid.Column="2" Text="M" TextColor="White" HorizontalOptions="Center"/>
+                    <BoxView Grid.Row="1" Grid.Column="3" Color="White" Grid.RowSpan="8" HorizontalOptions="Center"/>
+                    <Label Grid.Row="1" Grid.Column="4" Text="X" TextColor="White" HorizontalOptions="Center"/>
+                    <BoxView Grid.Row="1" Grid.Column="5" Color="White" Grid.RowSpan="8" HorizontalOptions="Center"/>
+                    <Label Grid.Row="1" Grid.Column="6" Text="J" TextColor="White" HorizontalOptions="Center"/>
+                    <BoxView Grid.Row="1" Grid.Column="7" Color="White" Grid.RowSpan="8" HorizontalOptions="Center"/>
+                    <Label Grid.Row="1" Grid.Column="8" Text="V" TextColor="White" HorizontalOptions="Center"/>
+                    <BoxView Grid.Row="1" Grid.Column="9" Color="White" Grid.RowSpan="8" HorizontalOptions="Center"/>
+                    <Label Grid.Row="1" Grid.Column="10" Text="S" TextColor="White" HorizontalOptions="Center"/>
+                    <BoxView Grid.Row="1" Grid.Column="11" Color="White" Grid.RowSpan="8" HorizontalOptions="Center"/>
+                    <Label Grid.Row="1" Grid.Column="12" Text="D" TextColor="White" HorizontalOptions="Center"/>
+                    <BoxView Grid.Row="1" Grid.Column="11" Color="White" Grid.RowSpan="8" HorizontalOptions="Center"/>
+                    <!--Fila 2-->
+                    <Label Grid.Row="2" Grid.Column="0" Text="01" TextColor="White" HorizontalOptions="Center"/>
+                    <BoxView Grid.Row="2" Grid.Column="1" Color="White" Grid.RowSpan="8" HorizontalOptions="Center"/>
+                    <Label Grid.Row="2" Grid.Column="2" Text="02" TextColor="White" HorizontalOptions="Center"/>
+                    <BoxView Grid.Row="2" Grid.Column="3" Color="White" Grid.RowSpan="8" HorizontalOptions="Center"/>
+                    <Label Grid.Row="2" Grid.Column="4" Text="03" TextColor="White" HorizontalOptions="Center"/>
+                    <BoxView Grid.Row="2" Grid.Column="5" Color="White" Grid.RowSpan="8" HorizontalOptions="Center"/>
+                    <Label Grid.Row="2" Grid.Column="6" Text="04" TextColor="White" HorizontalOptions="Center"/>
+                    <BoxView Grid.Row="2" Grid.Column="7" Color="White" Grid.RowSpan="8" HorizontalOptions="Center"/>
+                    <Label Grid.Row="2" Grid.Column="8" Text="05" TextColor="White" HorizontalOptions="Center"/>
+                    <BoxView Grid.Row="2" Grid.Column="9" Color="White" Grid.RowSpan="8" HorizontalOptions="Center"/>
+                    <Label Grid.Row="2" Grid.Column="10" Text="06" TextColor="White" HorizontalOptions="Center"/>
+                    <BoxView Grid.Row="2" Grid.Column="11" Color="White" Grid.RowSpan="8" HorizontalOptions="Center"/>
+                    <Label Grid.Row="2" Grid.Column="12" Text="07" TextColor="White" HorizontalOptions="Center"/>
+                    <!--Fila 3-->
+                    <ImageButton x:Name="btnLunes" Clicked="btnLunes_Clicked" Grid.Row="3" Grid.Column="0" Source="BotonMas" HorizontalOptions="Center" BackgroundColor="Transparent"/>
+                    <BoxView Grid.Row="3" Grid.Column="1" Color="White" Grid.RowSpan="8" HorizontalOptions="Center"/>
+                    <ImageButton x:Name="btnMartes" Clicked="btnMartes_Clicked" Grid.Row="3" Grid.Column="2" Source="BotonMas" HorizontalOptions="Center" BackgroundColor="Transparent"/>
+                    <BoxView Grid.Row="3" Grid.Column="3" Color="White" Grid.RowSpan="8" HorizontalOptions="Center"/>
+                    <ImageButton x:Name="btnMiercoles" Clicked="btnMiercoles_Clicked" Grid.Row="3" Grid.Column="4" Source="BotonMas" HorizontalOptions="Center" BackgroundColor="Transparent"/>
+                    <BoxView Grid.Row="3" Grid.Column="5" Color="White" Grid.RowSpan="8" HorizontalOptions="Center"/>
+                    <ImageButton x:Name="btnJueves" Clicked="btnJueves_Clicked" Grid.Row="3" Grid.Column="6" Source="BotonMas" HorizontalOptions="Center" BackgroundColor="Transparent"/>
+                    <BoxView Grid.Row="3" Grid.Column="7" Color="White" Grid.RowSpan="8" HorizontalOptions="Center"/>
+                    <ImageButton x:Name="btnViernes" Clicked="btnViernes_Clicked" Grid.Row="3" Grid.Column="8" Source="BotonMas" HorizontalOptions="Center" BackgroundColor="Transparent"/>
+                    <BoxView Grid.Row="3" Grid.Column="9" Color="White" Grid.RowSpan="8" HorizontalOptions="Center"/>
+                    <ImageButton x:Name="btnSabado" Clicked="btnSabado_Clicked" Grid.Row="3" Grid.Column="10" Source="BotonMas" HorizontalOptions="Center" BackgroundColor="Transparent"/>
+                    <BoxView Grid.Row="3" Grid.Column="11"  Color="White" Grid.RowSpan="8" HorizontalOptions="Center"/>
+                    <ImageButton x:Name="btnDomingo" Clicked="btnDomingo_Clicked" Grid.Row="3" Grid.Column="12" Source="BotonMas" HorizontalOptions="Center" BackgroundColor="Transparent"/>
+                    <!--Fila 4-->
+                    <ImageButton x:Name="btntareaLunes" Clicked="btntareaLunes_Clicked" Grid.Row="4" Grid.Column="0" Source="tarea" HorizontalOptions="Center" BackgroundColor="Transparent" WidthRequest="25"/>
+                    <BoxView Grid.Row="4" Grid.Column="1" Color="White" Grid.RowSpan="8" HorizontalOptions="Center"/>
+                    <ImageButton x:Name="btntareaMartes" Clicked="btntareaMartes_Clicked" Grid.Row="4" Grid.Column="2" Source="tarea" HorizontalOptions="Center" BackgroundColor="Transparent" WidthRequest="25"/>
+                    <BoxView Grid.Row="4" Grid.Column="3" Color="White" Grid.RowSpan="8" HorizontalOptions="Center"/>
+                    <ImageButton x:Name="btntareaMiercoles" Clicked="btntareaMiercoles_Clicked" Grid.Row="4" Grid.Column="4" Source="tarea" HorizontalOptions="Center" BackgroundColor="Transparent" WidthRequest="25"/>
+                    <BoxView Grid.Row="4" Grid.Column="5" Color="White" Grid.RowSpan="8" HorizontalOptions="Center"/>
+                    <ImageButton x:Name="btntareaJueves" Clicked="btntareaJueves_Clicked" Grid.Row="4" Grid.Column="6" Source="tarea" HorizontalOptions="Center" BackgroundColor="Transparent" WidthRequest="25"/>
+                    <BoxView Grid.Row="4" Grid.Column="7" Color="White" Grid.RowSpan="8" HorizontalOptions="Center"/>
+                    <ImageButton x:Name="btntareaViernes" Clicked="btntareaViernes_Clicked" Grid.Row="4" Grid.Column="8" Source="tarea" HorizontalOptions="Center" BackgroundColor="Transparent" WidthRequest="25"/>
+                    <BoxView Grid.Row="4" Grid.Column="9" Color="White" Grid.RowSpan="8" HorizontalOptions="Center"/>
+                    <ImageButton x:Name="btntareaSabado" Clicked="btntareaSabado_Clicked" Grid.Row="4" Grid.Column="10" Source="tarea" HorizontalOptions="Center" BackgroundColor="Transparent" WidthRequest="25"/>
+                    <BoxView Grid.Row="4" Grid.Column="11"  Color="White" Grid.RowSpan="8" HorizontalOptions="Center"/>
+                    <ImageButton x:Name="btntareaDomingo" Clicked="btntareaDomingo_Clicked" Grid.Row="4" Grid.Column="12" Source="tarea" HorizontalOptions="Center" BackgroundColor="Transparent" WidthRequest="25"/>
+                </Grid>
+            </StackLayout>
+        </Grid>
+    </StackLayout>
+</ContentPage>
